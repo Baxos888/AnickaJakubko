@@ -47,7 +47,7 @@ SOFTWARE.
 */
 int main(void)
 {
-//  int i = 0;
+  int i = 0;
 
   /**
   *  IMPORTANT NOTE!
@@ -77,13 +77,14 @@ int main(void)
   while (1)
   {
 	GPIOA->ODR |= (1<<5);
+	delay(50);
 	GPIOA->ODR &= ~(1<<5);
 
 	GPIOA->BSRRL |= (1<<5);
+	delay(50);
 	GPIOA->BSRRH |= (1<<5);
 
-	GPIOA->ODR = ~GPIOA->ODR;
-	GPIOA->ODR = ~GPIOA->ODR;
+
   }
   return 0;
 }

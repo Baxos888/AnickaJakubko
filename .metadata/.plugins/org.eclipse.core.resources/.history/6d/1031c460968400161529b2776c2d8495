@@ -83,7 +83,6 @@ int main(void)
 	GPIOA->BSRRH |= (1<<5);
 
 	GPIOA->ODR = ~GPIOA->ODR;
-	GPIOA->ODR = ~GPIOA->ODR;
   }
   return 0;
 }

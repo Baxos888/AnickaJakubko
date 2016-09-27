@@ -29,6 +29,7 @@ SOFTWARE.
 /* Includes */
 #include <stddef.h>
 #include "stm32l1xx.h"
+#include <conio.h>
 
 /* Private typedef */
 /* Private define  */
@@ -47,7 +48,7 @@ SOFTWARE.
 */
 int main(void)
 {
-//  int i = 0;
+  int i = 0;
 
   /**
   *  IMPORTANT NOTE!
@@ -67,23 +68,12 @@ int main(void)
   */
 
   /* TODO - Add your application code here */
-  RCC_AHBPeriphClockCmd(RCC_AHBPeriph_GPIOA, ENABLE);
-  GPIOA->MODER |= (01<<5*2);
-  GPIOA->OTYPER &= ~(1<<5);
-  GPIOA->PUPDR |= (01<<5*2);
-  GPIOA->OSPEEDR |= (11<<5*2);
+
 
   /* Infinite loop */
   while (1)
   {
-	GPIOA->ODR |= (1<<5);
-	GPIOA->ODR &= ~(1<<5);
-
-	GPIOA->BSRRL |= (1<<5);
-	GPIOA->BSRRH |= (1<<5);
-
-	GPIOA->ODR = ~GPIOA->ODR;
-	GPIOA->ODR = ~GPIOA->ODR;
+	i++;
   }
   return 0;
 }
