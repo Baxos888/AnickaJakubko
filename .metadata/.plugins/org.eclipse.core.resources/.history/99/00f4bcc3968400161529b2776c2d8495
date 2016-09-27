@@ -82,8 +82,8 @@ int main(void)
 	GPIOA->BSRRL |= (1<<5);
 	GPIOA->BSRRH |= (1<<5);
 
-	GPIOA->ODR ^= (1<<5);
-	GPIOA->ODR ^= (1<<5);
+	GPIOA->ODR = ~GPIOA->ODR;
+	GPIOA->ODR = ~GPIOA->ODR;
   }
   return 0;
 }
