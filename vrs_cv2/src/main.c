@@ -29,7 +29,8 @@ SOFTWARE.
 /* Includes */
 #include <stddef.h>
 #include "stm32l1xx.h"
-
+#include <stdbool.h>
+#include <stdio.h>
 /* Private typedef */
 /* Private define  */
 /* Private macro */
@@ -73,17 +74,33 @@ int main(void)
   GPIOA->PUPDR |= (01<<5*2);
   GPIOA->OSPEEDR |= (11<<5*2);
 
+  RCC_AHBPeriphClockCmd(RCC_AHBPeriph_GPIOC, ENABLE);
+  GPIOC->MODER |= (00<<13*2);
+  GPIOC->OTYPER &= ~(1<<13);
+  GPIOC->PUPDR |= (00<<13*2);
+
+  bool BUTTON;
   /* Infinite loop */
   while (1)
   {
-	GPIOA->ODR |= (1<<5);
-	GPIOA->ODR &= ~(1<<5);
+//	GPIOA->ODR |= (1<<5);
+//	GPIOA->ODR &= ~(1<<5);
+//
+//	GPIOA->BSRRL |= (1<<5);
+//	GPIOA->BSRRH |= (1<<5);
+//
+//	GPIOA->ODR ^= (1<<5);
+//	GPIOA->ODR ^= (1<<5);
 
-	GPIOA->BSRRL |= (1<<5);
-	GPIOA->BSRRH |= (1<<5);
-
-	GPIOA->ODR ^= (1<<5);
-	GPIOA->ODR ^= (1<<5);
+//	GPIOC->IDR ^= (1<<13); // zapisali sme 1 na PC13
+	if ((GPIOC->IDR & (1<<13)) == 0){
+			BUTTON = true;
+			printf("BUTTON je %d", &BUTTON);
+	}
+	else{
+			BUTTON = false;
+			printf("BUTTON je %d", &BUTTON);
+	}
   }
   return 0;
 }
