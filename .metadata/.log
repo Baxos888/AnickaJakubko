@@ -1436,3 +1436,722 @@ java.net.ConnectException: Connection refused: connect
 !ENTRY com.atollic.hardwaredebug.stlink 4 0 2016-10-04 11:03:25.704
 !MESSAGE Sent answer
 
+
+!ENTRY com.atollic.hardwaredebug.stlink 4 0 2016-10-04 11:11:28.597
+!MESSAGE Failed to connect to GDB Server:
+
+!STACK 0
+java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.atollic.hardwaredebug.stlink.StLinkDebugHardware.authenticate(Unknown Source)
+	at com.atollic.hardwaredebug.stlink.StLinkDebugHardware.verifyServer(Unknown Source)
+	at com.atollic.hardwaredebug.launch.export.HardwareDebugUtil.startServer(Unknown Source)
+	at com.atollic.hardwaredebug.launch.DSFFinalLaunchSequence$1.execute(Unknown Source)
+	at org.eclipse.cdt.dsf.concurrent.Sequence.executeStep(Sequence.java:459)
+	at org.eclipse.cdt.dsf.concurrent.Sequence.run(Sequence.java:363)
+	at org.eclipse.cdt.dsf.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:63)
+	at org.eclipse.cdt.dsf.gdb.service.command.GDBControl.completeInitialization(GDBControl.java:432)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate$1.execute(GdbLaunchDelegate.java:218)
+	at org.eclipse.cdt.dsf.concurrent.Query.run(Query.java:177)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY com.atollic.hardwaredebug.stlink 4 0 2016-10-04 11:11:29.600
+!MESSAGE Preparing to receive...
+
+!ENTRY com.atollic.hardwaredebug.stlink 1 0 2016-10-04 11:11:29.600
+!MESSAGE Length ok
+
+
+!ENTRY com.atollic.hardwaredebug.stlink 4 0 2016-10-04 11:11:29.604
+!MESSAGE Sent answer
+
+
+!ENTRY com.atollic.hardwaredebug.stlink 4 0 2016-10-04 11:15:24.206
+!MESSAGE Failed to connect to GDB Server:
+
+!STACK 0
+java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.atollic.hardwaredebug.stlink.StLinkDebugHardware.authenticate(Unknown Source)
+	at com.atollic.hardwaredebug.stlink.StLinkDebugHardware.verifyServer(Unknown Source)
+	at com.atollic.hardwaredebug.launch.export.HardwareDebugUtil.startServer(Unknown Source)
+	at com.atollic.hardwaredebug.launch.DSFFinalLaunchSequence$1.execute(Unknown Source)
+	at org.eclipse.cdt.dsf.concurrent.Sequence.executeStep(Sequence.java:459)
+	at org.eclipse.cdt.dsf.concurrent.Sequence.run(Sequence.java:363)
+	at org.eclipse.cdt.dsf.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:63)
+	at org.eclipse.cdt.dsf.gdb.service.command.GDBControl.completeInitialization(GDBControl.java:432)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate$1.execute(GdbLaunchDelegate.java:218)
+	at org.eclipse.cdt.dsf.concurrent.Query.run(Query.java:177)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY com.atollic.hardwaredebug.stlink 4 0 2016-10-04 11:15:25.710
+!MESSAGE Preparing to receive...
+
+!ENTRY com.atollic.hardwaredebug.stlink 1 0 2016-10-04 11:15:25.710
+!MESSAGE Length ok
+
+
+!ENTRY com.atollic.hardwaredebug.stlink 4 0 2016-10-04 11:15:25.710
+!MESSAGE Sent answer
+
+
+!ENTRY com.atollic.hardwaredebug.stlink 4 0 2016-10-04 11:16:04.410
+!MESSAGE Failed to connect to GDB Server:
+
+!STACK 0
+java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.atollic.hardwaredebug.stlink.StLinkDebugHardware.authenticate(Unknown Source)
+	at com.atollic.hardwaredebug.stlink.StLinkDebugHardware.verifyServer(Unknown Source)
+	at com.atollic.hardwaredebug.launch.export.HardwareDebugUtil.startServer(Unknown Source)
+	at com.atollic.hardwaredebug.launch.DSFFinalLaunchSequence$1.execute(Unknown Source)
+	at org.eclipse.cdt.dsf.concurrent.Sequence.executeStep(Sequence.java:459)
+	at org.eclipse.cdt.dsf.concurrent.Sequence.run(Sequence.java:363)
+	at org.eclipse.cdt.dsf.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:63)
+	at org.eclipse.cdt.dsf.gdb.service.command.GDBControl.completeInitialization(GDBControl.java:432)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate$1.execute(GdbLaunchDelegate.java:218)
+	at org.eclipse.cdt.dsf.concurrent.Query.run(Query.java:177)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY com.atollic.hardwaredebug.stlink 4 0 2016-10-04 11:16:05.416
+!MESSAGE Preparing to receive...
+
+!ENTRY com.atollic.hardwaredebug.stlink 1 0 2016-10-04 11:16:05.416
+!MESSAGE Length ok
+
+
+!ENTRY com.atollic.hardwaredebug.stlink 4 0 2016-10-04 11:16:05.416
+!MESSAGE Sent answer
+
+
+!ENTRY com.atollic.hardwaredebug.stlink 4 0 2016-10-04 11:25:31.465
+!MESSAGE Failed to connect to GDB Server:
+
+!STACK 0
+java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.atollic.hardwaredebug.stlink.StLinkDebugHardware.authenticate(Unknown Source)
+	at com.atollic.hardwaredebug.stlink.StLinkDebugHardware.verifyServer(Unknown Source)
+	at com.atollic.hardwaredebug.launch.export.HardwareDebugUtil.startServer(Unknown Source)
+	at com.atollic.hardwaredebug.launch.DSFFinalLaunchSequence$1.execute(Unknown Source)
+	at org.eclipse.cdt.dsf.concurrent.Sequence.executeStep(Sequence.java:459)
+	at org.eclipse.cdt.dsf.concurrent.Sequence.run(Sequence.java:363)
+	at org.eclipse.cdt.dsf.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:63)
+	at org.eclipse.cdt.dsf.gdb.service.command.GDBControl.completeInitialization(GDBControl.java:432)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate$1.execute(GdbLaunchDelegate.java:218)
+	at org.eclipse.cdt.dsf.concurrent.Query.run(Query.java:177)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY com.atollic.hardwaredebug.stlink 4 0 2016-10-04 11:25:32.467
+!MESSAGE Preparing to receive...
+
+!ENTRY com.atollic.hardwaredebug.stlink 1 0 2016-10-04 11:25:32.467
+!MESSAGE Length ok
+
+
+!ENTRY com.atollic.hardwaredebug.stlink 4 0 2016-10-04 11:25:32.467
+!MESSAGE Sent answer
+
+
+!ENTRY com.atollic.hardwaredebug.stlink 4 0 2016-10-04 11:27:03.448
+!MESSAGE Failed to connect to GDB Server:
+
+!STACK 0
+java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.atollic.hardwaredebug.stlink.StLinkDebugHardware.authenticate(Unknown Source)
+	at com.atollic.hardwaredebug.stlink.StLinkDebugHardware.verifyServer(Unknown Source)
+	at com.atollic.hardwaredebug.launch.export.HardwareDebugUtil.startServer(Unknown Source)
+	at com.atollic.hardwaredebug.launch.DSFFinalLaunchSequence$1.execute(Unknown Source)
+	at org.eclipse.cdt.dsf.concurrent.Sequence.executeStep(Sequence.java:459)
+	at org.eclipse.cdt.dsf.concurrent.Sequence.run(Sequence.java:363)
+	at org.eclipse.cdt.dsf.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:63)
+	at org.eclipse.cdt.dsf.gdb.service.command.GDBControl.completeInitialization(GDBControl.java:432)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate$1.execute(GdbLaunchDelegate.java:218)
+	at org.eclipse.cdt.dsf.concurrent.Query.run(Query.java:177)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY com.atollic.hardwaredebug.stlink 4 0 2016-10-04 11:27:04.451
+!MESSAGE Preparing to receive...
+
+!ENTRY com.atollic.hardwaredebug.stlink 1 0 2016-10-04 11:27:04.451
+!MESSAGE Length ok
+
+
+!ENTRY com.atollic.hardwaredebug.stlink 4 0 2016-10-04 11:27:04.451
+!MESSAGE Sent answer
+
+
+!ENTRY com.atollic.hardwaredebug.stlink 4 0 2016-10-04 11:28:20.114
+!MESSAGE Failed to connect to GDB Server:
+
+!STACK 0
+java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.atollic.hardwaredebug.stlink.StLinkDebugHardware.authenticate(Unknown Source)
+	at com.atollic.hardwaredebug.stlink.StLinkDebugHardware.verifyServer(Unknown Source)
+	at com.atollic.hardwaredebug.launch.export.HardwareDebugUtil.startServer(Unknown Source)
+	at com.atollic.hardwaredebug.launch.DSFFinalLaunchSequence$1.execute(Unknown Source)
+	at org.eclipse.cdt.dsf.concurrent.Sequence.executeStep(Sequence.java:459)
+	at org.eclipse.cdt.dsf.concurrent.Sequence.run(Sequence.java:363)
+	at org.eclipse.cdt.dsf.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:63)
+	at org.eclipse.cdt.dsf.gdb.service.command.GDBControl.completeInitialization(GDBControl.java:432)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate$1.execute(GdbLaunchDelegate.java:218)
+	at org.eclipse.cdt.dsf.concurrent.Query.run(Query.java:177)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY com.atollic.hardwaredebug.stlink 4 0 2016-10-04 11:28:21.620
+!MESSAGE Preparing to receive...
+
+!ENTRY com.atollic.hardwaredebug.stlink 1 0 2016-10-04 11:28:21.620
+!MESSAGE Length ok
+
+
+!ENTRY com.atollic.hardwaredebug.stlink 4 0 2016-10-04 11:28:21.624
+!MESSAGE Sent answer
+
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2016-10-04 11:29:48.154
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.concurrent.RequestMonitor@11c4b34): Status ERROR: org.eclipse.cdt.dsf.gdb code=10004 Failed to execute MI command:
+-exec-continue
+Error message from debugger back end:
+Warning:\nCannot insert hardware breakpoint 14.\nCannot insert hardware breakpoint 15.\nCannot insert hardware breakpoint 17.\nCannot insert hardware breakpoint 18.\nCannot insert hardware breakpoint 19.\nCould not insert hardware breakpoints:\nYou may have requested too many hardware breakpoints/watchpoints.\n java.lang.Exception: Warning:\nCannot insert hardware breakpoint 14.\nCannot insert hardware breakpoint 15.\nCannot insert hardware breakpoint 17.\nCannot insert hardware breakpoint 18.\nCannot insert hardware breakpoint 19.\nCould not insert hardware breakpoints:\nYou may have requested too many hardware breakpoints/watchpoints.\n' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2016-10-04 11:29:48.154
+!MESSAGE Failed to execute MI command:
+-exec-continue
+Error message from debugger back end:
+Warning:\nCannot insert hardware breakpoint 14.\nCannot insert hardware breakpoint 15.\nCannot insert hardware breakpoint 17.\nCannot insert hardware breakpoint 18.\nCannot insert hardware breakpoint 19.\nCould not insert hardware breakpoints:\nYou may have requested too many hardware breakpoints/watchpoints.\n
+!STACK 0
+java.lang.Exception: Warning:\nCannot insert hardware breakpoint 14.\nCannot insert hardware breakpoint 15.\nCannot insert hardware breakpoint 17.\nCannot insert hardware breakpoint 18.\nCannot insert hardware breakpoint 19.\nCould not insert hardware breakpoints:\nYou may have requested too many hardware breakpoints/watchpoints.\n
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1008)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:837)
+
+!ENTRY com.atollic.hardwaredebug.stlink 4 0 2016-10-04 11:29:56.538
+!MESSAGE Failed to connect to GDB Server:
+
+!STACK 0
+java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.atollic.hardwaredebug.stlink.StLinkDebugHardware.authenticate(Unknown Source)
+	at com.atollic.hardwaredebug.stlink.StLinkDebugHardware.verifyServer(Unknown Source)
+	at com.atollic.hardwaredebug.launch.export.HardwareDebugUtil.startServer(Unknown Source)
+	at com.atollic.hardwaredebug.launch.DSFFinalLaunchSequence$1.execute(Unknown Source)
+	at org.eclipse.cdt.dsf.concurrent.Sequence.executeStep(Sequence.java:459)
+	at org.eclipse.cdt.dsf.concurrent.Sequence.run(Sequence.java:363)
+	at org.eclipse.cdt.dsf.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:63)
+	at org.eclipse.cdt.dsf.gdb.service.command.GDBControl.completeInitialization(GDBControl.java:432)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate$1.execute(GdbLaunchDelegate.java:218)
+	at org.eclipse.cdt.dsf.concurrent.Query.run(Query.java:177)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY com.atollic.hardwaredebug.stlink 4 0 2016-10-04 11:29:57.540
+!MESSAGE Preparing to receive...
+
+!ENTRY com.atollic.hardwaredebug.stlink 1 0 2016-10-04 11:29:57.540
+!MESSAGE Length ok
+
+
+!ENTRY com.atollic.hardwaredebug.stlink 4 0 2016-10-04 11:29:57.540
+!MESSAGE Sent answer
+
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2016-10-04 11:30:03.823
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.concurrent.RequestMonitor@52a2d6): Status ERROR: org.eclipse.cdt.dsf.gdb code=10004 Failed to execute MI command:
+-exec-continue
+Error message from debugger back end:
+Warning:\nCannot insert hardware breakpoint 5.\nCannot insert hardware breakpoint 8.\nCannot insert hardware breakpoint 6.\nCannot insert hardware breakpoint 1.\nCannot insert hardware breakpoint 12.\nCannot insert hardware breakpoint 13.\nCannot insert hardware breakpoint 2.\nCould not insert hardware breakpoints:\nYou may have requested too many hardware breakpoints/watchpoints.\n java.lang.Exception: Warning:\nCannot insert hardware breakpoint 5.\nCannot insert hardware breakpoint 8.\nCannot insert hardware breakpoint 6.\nCannot insert hardware breakpoint 1.\nCannot insert hardware breakpoint 12.\nCannot insert hardware breakpoint 13.\nCannot insert hardware breakpoint 2.\nCould not insert hardware breakpoints:\nYou may have requested too many hardware breakpoints/watchpoints.\n' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2016-10-04 11:30:03.823
+!MESSAGE Failed to execute MI command:
+-exec-continue
+Error message from debugger back end:
+Warning:\nCannot insert hardware breakpoint 5.\nCannot insert hardware breakpoint 8.\nCannot insert hardware breakpoint 6.\nCannot insert hardware breakpoint 1.\nCannot insert hardware breakpoint 12.\nCannot insert hardware breakpoint 13.\nCannot insert hardware breakpoint 2.\nCould not insert hardware breakpoints:\nYou may have requested too many hardware breakpoints/watchpoints.\n
+!STACK 0
+java.lang.Exception: Warning:\nCannot insert hardware breakpoint 5.\nCannot insert hardware breakpoint 8.\nCannot insert hardware breakpoint 6.\nCannot insert hardware breakpoint 1.\nCannot insert hardware breakpoint 12.\nCannot insert hardware breakpoint 13.\nCannot insert hardware breakpoint 2.\nCould not insert hardware breakpoints:\nYou may have requested too many hardware breakpoints/watchpoints.\n
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1008)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:837)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2016-10-04 11:30:23.526
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.debug.ui.viewmodel.SteppingController$3@1dc5123): Status ERROR: org.eclipse.cdt.dsf.gdb code=10004 Failed to execute MI command:
+-exec-next 1
+Error message from debugger back end:
+Warning:\nCannot insert hardware breakpoint 5.\nCannot insert hardware breakpoint 8.\nCannot insert hardware breakpoint 6.\nCannot insert hardware breakpoint 1.\nCannot insert hardware breakpoint 12.\nCannot insert hardware breakpoint 13.\nCannot insert hardware breakpoint 2.\nCould not insert hardware breakpoints:\nYou may have requested too many hardware breakpoints/watchpoints.\n java.lang.Exception: Warning:\nCannot insert hardware breakpoint 5.\nCannot insert hardware breakpoint 8.\nCannot insert hardware breakpoint 6.\nCannot insert hardware breakpoint 1.\nCannot insert hardware breakpoint 12.\nCannot insert hardware breakpoint 13.\nCannot insert hardware breakpoint 2.\nCould not insert hardware breakpoints:\nYou may have requested too many hardware breakpoints/watchpoints.\n' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2016-10-04 11:30:23.526
+!MESSAGE Failed to execute MI command:
+-exec-next 1
+Error message from debugger back end:
+Warning:\nCannot insert hardware breakpoint 5.\nCannot insert hardware breakpoint 8.\nCannot insert hardware breakpoint 6.\nCannot insert hardware breakpoint 1.\nCannot insert hardware breakpoint 12.\nCannot insert hardware breakpoint 13.\nCannot insert hardware breakpoint 2.\nCould not insert hardware breakpoints:\nYou may have requested too many hardware breakpoints/watchpoints.\n
+!STACK 0
+java.lang.Exception: Warning:\nCannot insert hardware breakpoint 5.\nCannot insert hardware breakpoint 8.\nCannot insert hardware breakpoint 6.\nCannot insert hardware breakpoint 1.\nCannot insert hardware breakpoint 12.\nCannot insert hardware breakpoint 13.\nCannot insert hardware breakpoint 2.\nCould not insert hardware breakpoints:\nYou may have requested too many hardware breakpoints/watchpoints.\n
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1008)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:837)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2016-10-04 11:30:24.711
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.debug.ui.viewmodel.SteppingController$3@8782f7): Status ERROR: org.eclipse.cdt.dsf.gdb code=10004 Failed to execute MI command:
+-exec-next 1
+Error message from debugger back end:
+Warning:\nCannot insert hardware breakpoint 5.\nCannot insert hardware breakpoint 8.\nCannot insert hardware breakpoint 6.\nCannot insert hardware breakpoint 1.\nCannot insert hardware breakpoint 12.\nCannot insert hardware breakpoint 13.\nCannot insert hardware breakpoint 2.\nCould not insert hardware breakpoints:\nYou may have requested too many hardware breakpoints/watchpoints.\n java.lang.Exception: Warning:\nCannot insert hardware breakpoint 5.\nCannot insert hardware breakpoint 8.\nCannot insert hardware breakpoint 6.\nCannot insert hardware breakpoint 1.\nCannot insert hardware breakpoint 12.\nCannot insert hardware breakpoint 13.\nCannot insert hardware breakpoint 2.\nCould not insert hardware breakpoints:\nYou may have requested too many hardware breakpoints/watchpoints.\n' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2016-10-04 11:30:24.711
+!MESSAGE Failed to execute MI command:
+-exec-next 1
+Error message from debugger back end:
+Warning:\nCannot insert hardware breakpoint 5.\nCannot insert hardware breakpoint 8.\nCannot insert hardware breakpoint 6.\nCannot insert hardware breakpoint 1.\nCannot insert hardware breakpoint 12.\nCannot insert hardware breakpoint 13.\nCannot insert hardware breakpoint 2.\nCould not insert hardware breakpoints:\nYou may have requested too many hardware breakpoints/watchpoints.\n
+!STACK 0
+java.lang.Exception: Warning:\nCannot insert hardware breakpoint 5.\nCannot insert hardware breakpoint 8.\nCannot insert hardware breakpoint 6.\nCannot insert hardware breakpoint 1.\nCannot insert hardware breakpoint 12.\nCannot insert hardware breakpoint 13.\nCannot insert hardware breakpoint 2.\nCould not insert hardware breakpoints:\nYou may have requested too many hardware breakpoints/watchpoints.\n
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1008)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:837)
+
+!ENTRY com.atollic.hardwaredebug.stlink 4 0 2016-10-04 11:30:45.331
+!MESSAGE Failed to connect to GDB Server:
+
+!STACK 0
+java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.atollic.hardwaredebug.stlink.StLinkDebugHardware.authenticate(Unknown Source)
+	at com.atollic.hardwaredebug.stlink.StLinkDebugHardware.verifyServer(Unknown Source)
+	at com.atollic.hardwaredebug.launch.export.HardwareDebugUtil.startServer(Unknown Source)
+	at com.atollic.hardwaredebug.launch.DSFFinalLaunchSequence$1.execute(Unknown Source)
+	at org.eclipse.cdt.dsf.concurrent.Sequence.executeStep(Sequence.java:459)
+	at org.eclipse.cdt.dsf.concurrent.Sequence.run(Sequence.java:363)
+	at org.eclipse.cdt.dsf.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:63)
+	at org.eclipse.cdt.dsf.gdb.service.command.GDBControl.completeInitialization(GDBControl.java:432)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate$1.execute(GdbLaunchDelegate.java:218)
+	at org.eclipse.cdt.dsf.concurrent.Query.run(Query.java:177)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY com.atollic.hardwaredebug.stlink 4 0 2016-10-04 11:30:46.840
+!MESSAGE Preparing to receive...
+
+!ENTRY com.atollic.hardwaredebug.stlink 1 0 2016-10-04 11:30:46.840
+!MESSAGE Length ok
+
+
+!ENTRY com.atollic.hardwaredebug.stlink 4 0 2016-10-04 11:30:46.840
+!MESSAGE Sent answer
+
+
+!ENTRY com.atollic.hardwaredebug.stlink 4 0 2016-10-04 11:31:41.639
+!MESSAGE Failed to connect to GDB Server:
+
+!STACK 0
+java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.atollic.hardwaredebug.stlink.StLinkDebugHardware.authenticate(Unknown Source)
+	at com.atollic.hardwaredebug.stlink.StLinkDebugHardware.verifyServer(Unknown Source)
+	at com.atollic.hardwaredebug.launch.export.HardwareDebugUtil.startServer(Unknown Source)
+	at com.atollic.hardwaredebug.launch.DSFFinalLaunchSequence$1.execute(Unknown Source)
+	at org.eclipse.cdt.dsf.concurrent.Sequence.executeStep(Sequence.java:459)
+	at org.eclipse.cdt.dsf.concurrent.Sequence.run(Sequence.java:363)
+	at org.eclipse.cdt.dsf.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:63)
+	at org.eclipse.cdt.dsf.gdb.service.command.GDBControl.completeInitialization(GDBControl.java:432)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate$1.execute(GdbLaunchDelegate.java:218)
+	at org.eclipse.cdt.dsf.concurrent.Query.run(Query.java:177)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY com.atollic.hardwaredebug.stlink 4 0 2016-10-04 11:31:42.640
+!MESSAGE Preparing to receive...
+
+!ENTRY com.atollic.hardwaredebug.stlink 1 0 2016-10-04 11:31:42.640
+!MESSAGE Length ok
+
+
+!ENTRY com.atollic.hardwaredebug.stlink 4 0 2016-10-04 11:31:42.640
+!MESSAGE Sent answer
+
+
+!ENTRY com.atollic.hardwaredebug.stlink 4 0 2016-10-04 11:32:27.700
+!MESSAGE Failed to connect to GDB Server:
+
+!STACK 0
+java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.atollic.hardwaredebug.stlink.StLinkDebugHardware.authenticate(Unknown Source)
+	at com.atollic.hardwaredebug.stlink.StLinkDebugHardware.verifyServer(Unknown Source)
+	at com.atollic.hardwaredebug.launch.export.HardwareDebugUtil.startServer(Unknown Source)
+	at com.atollic.hardwaredebug.launch.DSFFinalLaunchSequence$1.execute(Unknown Source)
+	at org.eclipse.cdt.dsf.concurrent.Sequence.executeStep(Sequence.java:459)
+	at org.eclipse.cdt.dsf.concurrent.Sequence.run(Sequence.java:363)
+	at org.eclipse.cdt.dsf.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:63)
+	at org.eclipse.cdt.dsf.gdb.service.command.GDBControl.completeInitialization(GDBControl.java:432)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate$1.execute(GdbLaunchDelegate.java:218)
+	at org.eclipse.cdt.dsf.concurrent.Query.run(Query.java:177)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY com.atollic.hardwaredebug.stlink 4 0 2016-10-04 11:32:28.702
+!MESSAGE Preparing to receive...
+
+!ENTRY com.atollic.hardwaredebug.stlink 1 0 2016-10-04 11:32:28.702
+!MESSAGE Length ok
+
+
+!ENTRY com.atollic.hardwaredebug.stlink 4 0 2016-10-04 11:32:28.702
+!MESSAGE Sent answer
+
+
+!ENTRY com.atollic.hardwaredebug.stlink 4 0 2016-10-04 11:32:58.156
+!MESSAGE Failed to connect to GDB Server:
+
+!STACK 0
+java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.atollic.hardwaredebug.stlink.StLinkDebugHardware.authenticate(Unknown Source)
+	at com.atollic.hardwaredebug.stlink.StLinkDebugHardware.verifyServer(Unknown Source)
+	at com.atollic.hardwaredebug.launch.export.HardwareDebugUtil.startServer(Unknown Source)
+	at com.atollic.hardwaredebug.launch.DSFFinalLaunchSequence$1.execute(Unknown Source)
+	at org.eclipse.cdt.dsf.concurrent.Sequence.executeStep(Sequence.java:459)
+	at org.eclipse.cdt.dsf.concurrent.Sequence.run(Sequence.java:363)
+	at org.eclipse.cdt.dsf.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:63)
+	at org.eclipse.cdt.dsf.gdb.service.command.GDBControl.completeInitialization(GDBControl.java:432)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate$1.execute(GdbLaunchDelegate.java:218)
+	at org.eclipse.cdt.dsf.concurrent.Query.run(Query.java:177)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY com.atollic.hardwaredebug.stlink 4 0 2016-10-04 11:32:59.660
+!MESSAGE Preparing to receive...
+
+!ENTRY com.atollic.hardwaredebug.stlink 1 0 2016-10-04 11:32:59.660
+!MESSAGE Length ok
+
+
+!ENTRY com.atollic.hardwaredebug.stlink 4 0 2016-10-04 11:32:59.660
+!MESSAGE Sent answer
+
+
+!ENTRY com.atollic.hardwaredebug.stlink 4 0 2016-10-04 11:33:37.066
+!MESSAGE Failed to connect to GDB Server:
+
+!STACK 0
+java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.atollic.hardwaredebug.stlink.StLinkDebugHardware.authenticate(Unknown Source)
+	at com.atollic.hardwaredebug.stlink.StLinkDebugHardware.verifyServer(Unknown Source)
+	at com.atollic.hardwaredebug.launch.export.HardwareDebugUtil.startServer(Unknown Source)
+	at com.atollic.hardwaredebug.launch.DSFFinalLaunchSequence$1.execute(Unknown Source)
+	at org.eclipse.cdt.dsf.concurrent.Sequence.executeStep(Sequence.java:459)
+	at org.eclipse.cdt.dsf.concurrent.Sequence.run(Sequence.java:363)
+	at org.eclipse.cdt.dsf.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:63)
+	at org.eclipse.cdt.dsf.gdb.service.command.GDBControl.completeInitialization(GDBControl.java:432)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate$1.execute(GdbLaunchDelegate.java:218)
+	at org.eclipse.cdt.dsf.concurrent.Query.run(Query.java:177)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY com.atollic.hardwaredebug.stlink 4 0 2016-10-04 11:33:38.571
+!MESSAGE Preparing to receive...
+
+!ENTRY com.atollic.hardwaredebug.stlink 1 0 2016-10-04 11:33:38.571
+!MESSAGE Length ok
+
+
+!ENTRY com.atollic.hardwaredebug.stlink 4 0 2016-10-04 11:33:38.571
+!MESSAGE Sent answer
+
+
+!ENTRY com.atollic.hardwaredebug.stlink 4 0 2016-10-04 11:33:44.500
+!MESSAGE Failed to connect to GDB Server:
+
+!STACK 0
+java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.atollic.hardwaredebug.stlink.StLinkDebugHardware.authenticate(Unknown Source)
+	at com.atollic.hardwaredebug.stlink.StLinkDebugHardware.verifyServer(Unknown Source)
+	at com.atollic.hardwaredebug.launch.export.HardwareDebugUtil.startServer(Unknown Source)
+	at com.atollic.hardwaredebug.launch.DSFFinalLaunchSequence$1.execute(Unknown Source)
+	at org.eclipse.cdt.dsf.concurrent.Sequence.executeStep(Sequence.java:459)
+	at org.eclipse.cdt.dsf.concurrent.Sequence.run(Sequence.java:363)
+	at org.eclipse.cdt.dsf.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:63)
+	at org.eclipse.cdt.dsf.gdb.service.command.GDBControl.completeInitialization(GDBControl.java:432)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate$1.execute(GdbLaunchDelegate.java:218)
+	at org.eclipse.cdt.dsf.concurrent.Query.run(Query.java:177)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY com.atollic.hardwaredebug.stlink 4 0 2016-10-04 11:33:45.502
+!MESSAGE Preparing to receive...
+
+!ENTRY com.atollic.hardwaredebug.stlink 1 0 2016-10-04 11:33:45.502
+!MESSAGE Length ok
+
+
+!ENTRY com.atollic.hardwaredebug.stlink 4 0 2016-10-04 11:33:45.502
+!MESSAGE Sent answer
+
+
+!ENTRY com.atollic.hardwaredebug.stlink 4 0 2016-10-04 11:34:39.091
+!MESSAGE Failed to connect to GDB Server:
+
+!STACK 0
+java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.atollic.hardwaredebug.stlink.StLinkDebugHardware.authenticate(Unknown Source)
+	at com.atollic.hardwaredebug.stlink.StLinkDebugHardware.verifyServer(Unknown Source)
+	at com.atollic.hardwaredebug.launch.export.HardwareDebugUtil.startServer(Unknown Source)
+	at com.atollic.hardwaredebug.launch.DSFFinalLaunchSequence$1.execute(Unknown Source)
+	at org.eclipse.cdt.dsf.concurrent.Sequence.executeStep(Sequence.java:459)
+	at org.eclipse.cdt.dsf.concurrent.Sequence.run(Sequence.java:363)
+	at org.eclipse.cdt.dsf.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:63)
+	at org.eclipse.cdt.dsf.gdb.service.command.GDBControl.completeInitialization(GDBControl.java:432)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate$1.execute(GdbLaunchDelegate.java:218)
+	at org.eclipse.cdt.dsf.concurrent.Query.run(Query.java:177)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY com.atollic.hardwaredebug.stlink 4 0 2016-10-04 11:34:40.596
+!MESSAGE Preparing to receive...
+
+!ENTRY com.atollic.hardwaredebug.stlink 1 0 2016-10-04 11:34:40.596
+!MESSAGE Length ok
+
+
+!ENTRY com.atollic.hardwaredebug.stlink 4 0 2016-10-04 11:34:40.596
+!MESSAGE Sent answer
+
+
+!ENTRY org.eclipse.core.jobs 4 2 2016-10-04 11:38:07.204
+!MESSAGE An internal error occurred during: "Interrupt monitor job.".
+!STACK 0
+java.util.concurrent.RejectedExecutionException: Task java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@fa18c6 rejected from org.eclipse.cdt.dsf.concurrent.DefaultDsfExecutor@1597714[Shutting down, pool size = 1, active threads = 0, queued tasks = 1, completed tasks = 34101]
+	at java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2047)
+	at java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:823)
+	at java.util.concurrent.ScheduledThreadPoolExecutor.delayedExecute(ScheduledThreadPoolExecutor.java:326)
+	at java.util.concurrent.ScheduledThreadPoolExecutor.schedule(ScheduledThreadPoolExecutor.java:533)
+	at org.eclipse.cdt.dsf.concurrent.DefaultDsfExecutor.schedule(DefaultDsfExecutor.java:438)
+	at java.util.concurrent.ScheduledThreadPoolExecutor.submit(ScheduledThreadPoolExecutor.java:632)
+	at org.eclipse.cdt.dsf.concurrent.DefaultDsfExecutor.submit(DefaultDsfExecutor.java:470)
+	at org.eclipse.cdt.dsf.gdb.service.GDBBackend$MonitorInterruptJob.run(GDBBackend.java:1012)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY com.atollic.hardwaredebug.stlink 4 0 2016-10-04 11:38:08.161
+!MESSAGE Failed to connect to GDB Server:
+
+!STACK 0
+java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.atollic.hardwaredebug.stlink.StLinkDebugHardware.authenticate(Unknown Source)
+	at com.atollic.hardwaredebug.stlink.StLinkDebugHardware.verifyServer(Unknown Source)
+	at com.atollic.hardwaredebug.launch.export.HardwareDebugUtil.startServer(Unknown Source)
+	at com.atollic.hardwaredebug.launch.DSFFinalLaunchSequence$1.execute(Unknown Source)
+	at org.eclipse.cdt.dsf.concurrent.Sequence.executeStep(Sequence.java:459)
+	at org.eclipse.cdt.dsf.concurrent.Sequence.run(Sequence.java:363)
+	at org.eclipse.cdt.dsf.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:63)
+	at org.eclipse.cdt.dsf.gdb.service.command.GDBControl.completeInitialization(GDBControl.java:432)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate$1.execute(GdbLaunchDelegate.java:218)
+	at org.eclipse.cdt.dsf.concurrent.Query.run(Query.java:177)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY com.atollic.hardwaredebug.stlink 4 0 2016-10-04 11:38:09.663
+!MESSAGE Preparing to receive...
+
+!ENTRY com.atollic.hardwaredebug.stlink 1 0 2016-10-04 11:38:09.663
+!MESSAGE Length ok
+
+
+!ENTRY com.atollic.hardwaredebug.stlink 4 0 2016-10-04 11:38:09.663
+!MESSAGE Sent answer
+
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2016-10-04 11:39:23.962
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.debug.ui.viewmodel.SteppingController$3@1b34c33): Status ERROR: org.eclipse.cdt.dsf.gdb code=10004 Failed to execute MI command:
+-exec-next 1
+Error message from debugger back end:
+Quit (expect signal SIGINT when the program is resumed) java.lang.Exception: Quit (expect signal SIGINT when the program is resumed)' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2016-10-04 11:39:23.962
+!MESSAGE Failed to execute MI command:
+-exec-next 1
+Error message from debugger back end:
+Quit (expect signal SIGINT when the program is resumed)
+!STACK 0
+java.lang.Exception: Quit (expect signal SIGINT when the program is resumed)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1008)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:837)

@@ -80,6 +80,18 @@ int main(void)
   GPIOC->PUPDR |= (00<<13*2);
 
   bool BUTTON;
+  while(1){
+  int i=0;
+  int j=0;
+  for(i=0;i<10;i++){
+  	if (i==9)
+  		GPIOA->ODR &= ~(1<<5); //vypni LED
+  }
+  	for(j=0;j<10;j++){
+  		if (j==9)
+  			GPIOA->ODR |= (1<<5); //zapni LED
+  	}
+  }
   /* Infinite loop */
   while (1)
   {
@@ -114,18 +126,10 @@ int main(void)
 ////  			printf("BUTTON je %d", &BUTTON);
 //  	}
 	  /* uloha 3a */
-//	GPIOA->ODR |= (1<<5); //zapni LED
-  int i=0;
-    int j=0;
-    for(i=0;i<10;i++){
-    	if (i==9)
-    		GPIOA->ODR &= ~(1<<5); //vypni LED
-    }
-    	for(j=0;j<10;j++){
-    		if (j==9)
-    			GPIOA->ODR |= (1<<5); //zapni LED
-    	}
   }
+//	GPIOA->ODR |= (1<<5); //zapni LED
+
+
   return 0;
 }
 

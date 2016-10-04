@@ -114,17 +114,17 @@ int main(void)
 ////  			printf("BUTTON je %d", &BUTTON);
 //  	}
 	  /* uloha 3a */
-//	GPIOA->ODR |= (1<<5); //zapni LED
-  int i=0;
-    int j=0;
-    for(i=0;i<10;i++){
-    	if (i==9)
-    		GPIOA->ODR &= ~(1<<5); //vypni LED
-    }
-    	for(j=0;j<10;j++){
-    		if (j==9)
-    			GPIOA->ODR |= (1<<5); //zapni LED
-    	}
+	GPIOA->ODR |= (1<<5); //zapni LED
+	int i=0;
+	int j=0;
+	for(i=0;i++;i<10){
+		if (i==9)
+			GPIOA->ODR &= ~(1<<5); //vypni LED
+	}
+	for(j=0;j++;j<10){
+		if (j==9)
+			GPIOA->ODR |= (1<<5); //zapni LED
+	}
   }
   return 0;
 }
