@@ -115,7 +115,7 @@ int main(void) {
 			if ((GPIOC->IDR & (1 << 13)) != 0){
 				counter2++;
 				if(counter2 >= 5){
-					GPIOA->ODR ^=(uint32_t)(0b01 << 5);
+					GPIOC->ODR ^=(uint32_t)(0b01 << 5);
 					BUTTON = false;
 					counter2 = 0;
 				}
