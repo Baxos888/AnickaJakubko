@@ -76,7 +76,7 @@ int main(void) {
 	GPIOC->MODER |= (00 << 13 * 2);
 	GPIOC->OTYPER &= ~(1 << 13);
 	GPIOC->PUPDR |= (00 << 13 * 2);
-	int counter = 0;
+
 	bool BUTTON;
 	/* Infinite loop */
 	while (1) {
@@ -121,7 +121,7 @@ int main(void) {
 //				GPIOA->ODR |= (1 << 5); //zapni LED
 //		}
 //		uloha 3c************
-
+		int counter = 0;
 		if ((GPIOC->IDR & (1 << 13)) == 0) {
 			BUTTON = true;
 			counter++;
@@ -129,7 +129,7 @@ int main(void) {
 			GPIOA->ODR |= (1<<5); //zapni LED
 			}
 		else{
-			GPIOA->ODR &= ~(1<<5); //vypni LED
+
 		}
 		}
 	}

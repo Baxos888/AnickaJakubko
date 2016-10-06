@@ -29,8 +29,8 @@ SOFTWARE.
 /* Includes */
 #include <stddef.h>
 #include "stm32l1xx.h"
-
-
+#include <stdbool.h>
+#include <stdio.h>
 /* Private typedef */
 /* Private define  */
 /* Private macro */
@@ -48,7 +48,7 @@ SOFTWARE.
 */
 int main(void)
 {
-  int i = 0;
+//  int i = 0;
 
   /**
   *  IMPORTANT NOTE!
@@ -68,12 +68,63 @@ int main(void)
   */
 
   /* TODO - Add your application code here */
+  RCC_AHBPeriphClockCmd(RCC_AHBPeriph_GPIOA, ENABLE);
+  GPIOA->MODER |= (01<<5*2);
+  GPIOA->OTYPER &= ~(1<<5);
+  GPIOA->PUPDR |= (01<<5*2);
+  GPIOA->OSPEEDR |= (11<<5*2);
 
+  RCC_AHBPeriphClockCmd(RCC_AHBPeriph_GPIOC, ENABLE);
+  GPIOC->MODER |= (00<<13*2);
+  GPIOC->OTYPER &= ~(1<<13);
+  GPIOC->PUPDR |= (00<<13*2);
 
+  bool BUTTON;
   /* Infinite loop */
   while (1)
   {
-	i++;
+//	GPIOA->ODR |= (1<<5);
+//	GPIOA->ODR &= ~(1<<5);
+//
+//	GPIOA->BSRRL |= (1<<5);
+//	GPIOA->BSRRH |= (1<<5);
+//
+//	GPIOA->ODR ^= (1<<5);
+//	GPIOA->ODR ^= (1<<5);
+
+//	GPIOC->IDR ^= (1<<13); // zapisali sme 1 na PC13
+/* uloha 2 */
+//	if ((GPIOC->IDR & (1<<13)) == 0){
+//			BUTTON = true;
+//			printf("BUTTON je %d", &BUTTON);
+//	}
+//	else{
+//			BUTTON = false;
+//			printf("BUTTON je %d", &BUTTON);
+//	}
+/* uloha 3b */
+//  	if ((GPIOC->IDR & (1<<13)) == 0){
+//  			BUTTON = true;
+//  			GPIOA->ODR |= (1<<5); //zapni LED
+////  			printf("BUTTON je %d", &BUTTON);
+//  	}
+//  	else{
+//  			BUTTON = false;
+//  			GPIOA->ODR &= ~(1<<5); //vypni LED
+////  			printf("BUTTON je %d", &BUTTON);
+//  	}
+	  /* uloha 3a */
+//	GPIOA->ODR |= (1<<5); //zapni LED
+  int i=0;
+    int j=0;
+    for(i=0;i<10;i++){
+    	if (i==9)
+    		GPIOA->ODR &= ~(1<<5); //vypni LED
+    }
+    	for(j=0;j<10;j++){
+    		if (j==9)
+    			GPIOA->ODR |= (1<<5); //zapni LED
+    	}
   }
   return 0;
 }
