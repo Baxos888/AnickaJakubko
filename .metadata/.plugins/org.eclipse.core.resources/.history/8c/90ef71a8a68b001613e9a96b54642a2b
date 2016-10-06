@@ -45,12 +45,12 @@ int main(void) {
 	GPIO_InitTypeDef gpioCInitStructure;
 
 	RCC_AHBPeriphClockCmd(RCC_AHBPeriph_GPIOC, ENABLE);
-	gpioCInitStructure.GPIO_Mode = GPIO_Mode_IN;
-	gpioCInitStructure.GPIO_OType = GPIO_OType_PP;
-	gpioCInitStructure.GPIO_PuPd = GPIO_PuPd_NOPULL;
-	gpioCInitStructure.GPIO_Pin = GPIO_Pin_13;
+	gpioAInitStructure.GPIO_Mode = GPIO_Mode_IN;
+	gpioAInitStructure.GPIO_OType = GPIO_OType_PP;
+	gpioAInitStructure.GPIO_PuPd = GPIO_PuPd_NOPULL;
+	gpioAInitStructure.GPIO_Pin = GPIO_Pin_5;
 
-	GPIO_Init(GPIOC, &gpioCInitStructure);
+	GPIO_Init(GPIOA, &gpioAInitStructure);
 
 	while (1) {
 //	uloha1
@@ -59,10 +59,6 @@ int main(void) {
 //GPIO_ToggleBits(GPIOA, GPIO_Pin_5);
 //GPIO_ToggleBits(GPIOA, GPIO_Pin_5);
 //	  Uloha 2
-//	GPIO_ReadOutputDataBit(GPIOC, GPIO_Pin_13);
-//	GPIO_ReadOutputDataBit(GPIOC, GPIO_Pin_13);
-//		Uloha 3
-
 	}
 	return 0;
 }
