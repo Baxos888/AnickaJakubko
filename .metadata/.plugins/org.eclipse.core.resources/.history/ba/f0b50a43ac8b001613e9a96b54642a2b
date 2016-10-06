@@ -54,8 +54,6 @@ int main(void) {
 	GPIO_Init(GPIOC, &gpioCInitStructure);
 
 	bool BUTTON;
-	int counter = 0;
-	int counter2 = 0;
 	while (1) {
 //	uloha1
 //GPIO_SetBits(GPIOA, GPIO_Pin_5);
@@ -85,24 +83,7 @@ int main(void) {
 //			GPIO_ResetBits(GPIOA, GPIO_Pin_5); //vypni LED
 //		}
 //		Uloha 3c
-		if ((GPIO_ReadInputDataBit(GPIOC, GPIO_Pin_13)) == 0) {
-			counter++;
-			if (counter >= 5) {
-				BUTTON = true;
-				counter = 0;
-			}
-		}
-		if (BUTTON == true) {
-			if ((GPIO_ReadInputDataBit(GPIOC, GPIO_Pin_13)) == 1) {
-				counter2++;
-				if (counter2 >= 5) {
-					GPIO_ToggleBits(GPIOA, GPIO_Pin_5); //vypni LED
-					BUTTON = false;
-					counter2 = 0;
-				}
-			}
 
-		}
 	}
 	return 0;
 }
@@ -143,4 +124,3 @@ void __assert_func(const char *file, int line, const char *func,
 void __assert(const char *file, int line, const char *failedexpr) {
 	__assert_func(file, line, NULL, failedexpr);
 }
-

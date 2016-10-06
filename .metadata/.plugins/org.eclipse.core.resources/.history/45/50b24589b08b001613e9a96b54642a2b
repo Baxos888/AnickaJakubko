@@ -96,7 +96,7 @@ int main(void) {
 			if ((GPIO_ReadInputDataBit(GPIOC, GPIO_Pin_13)) == 1) {
 				counter2++;
 				if (counter2 >= 5) {
-					GPIO_ToggleBits(GPIOA, GPIO_Pin_5); //vypni LED
+					GPIO_ToogleBits(GPIOA, GPIO_Pin_5); //vypni LED
 					BUTTON = false;
 					counter2 = 0;
 				}

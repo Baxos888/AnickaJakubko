@@ -1022,3 +1022,293 @@ Generate listing file
 Output sent to: vrs_cv3.elf.list
 Generate listing file done
 Generate build reports done
+Info: Nothing to build for projektik1
+Info: Nothing to build for vrs_cv2
+11:43:27 **** Incremental Build of configuration Debug for project vrs_cv3 ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m3 -std=gnu11 -DSTM32L1XX_HD -DUSE_STDPERIPH_DRIVER -I../src -I..\Libraries\STM32L1xx_StdPeriph_Driver\inc -I..\Libraries\CMSIS\Include -I..\Libraries\CMSIS\Device\ST\STM32L1xx\Include -O0 -ffunction-sections -fdata-sections -g -Wall -o src\main.o ..\src\main.c 
+arm-atollic-eabi-gcc Libraries\STM32L1xx_StdPeriph_Driver\src\misc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_adc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_aes.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_aes_util.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_comp.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_crc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dac.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dbgmcu.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dma.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_exti.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_flash.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_flash_ramfunc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_fsmc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_gpio.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_i2c.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_iwdg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_lcd.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_opamp.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_pwr.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_rcc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_rtc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_sdio.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_spi.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_syscfg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_tim.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_usart.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_wwdg.o src\main.o src\startup_stm32l1xx_hd.o src\stm32l1xx_it.o src\system_stm32l1xx.o src\tiny_printf.o -o vrs_cv3.elf -mthumb -mcpu=cortex-m3 -T..\stm32_flash.ld -Wl,--start-group -lc -lm -Wl,--end-group -specs=nano.specs -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=vrs_cv3.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for ARM 6.0.0\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for ARM 6.0.0\Tools\arm-atollic-reports.jar sizeinfo list vrs_cv3.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   1604	      8	   1052	   2664	    a68	vrs_cv3.elf
+Print size information done
+Generate listing file
+Output sent to: vrs_cv3.elf.list
+Generate listing file done
+Generate build reports done
+Info: Nothing to build for vrs_cv3
+11:44:40 **** Incremental Build of configuration Debug for project vrs_cv3 ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m3 -std=gnu11 -DSTM32L1XX_HD -DUSE_STDPERIPH_DRIVER -I../src -I..\Libraries\STM32L1xx_StdPeriph_Driver\inc -I..\Libraries\CMSIS\Include -I..\Libraries\CMSIS\Device\ST\STM32L1xx\Include -O0 -ffunction-sections -fdata-sections -g -Wall -o src\main.o ..\src\main.c 
+arm-atollic-eabi-gcc Libraries\STM32L1xx_StdPeriph_Driver\src\misc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_adc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_aes.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_aes_util.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_comp.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_crc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dac.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dbgmcu.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dma.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_exti.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_flash.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_flash_ramfunc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_fsmc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_gpio.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_i2c.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_iwdg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_lcd.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_opamp.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_pwr.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_rcc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_rtc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_sdio.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_spi.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_syscfg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_tim.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_usart.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_wwdg.o src\main.o src\startup_stm32l1xx_hd.o src\stm32l1xx_it.o src\system_stm32l1xx.o src\tiny_printf.o -o vrs_cv3.elf -mthumb -mcpu=cortex-m3 -T..\stm32_flash.ld -Wl,--start-group -lc -lm -Wl,--end-group -specs=nano.specs -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=vrs_cv3.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for ARM 6.0.0\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for ARM 6.0.0\Tools\arm-atollic-reports.jar sizeinfo list vrs_cv3.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   1616	      8	   1052	   2676	    a74	vrs_cv3.elf
+Print size information done
+Generate listing file
+Output sent to: vrs_cv3.elf.list
+Generate listing file done
+Generate build reports done
+11:48:46 **** Incremental Build of configuration Debug for project vrs_cv3 ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m3 -std=gnu11 -DSTM32L1XX_HD -DUSE_STDPERIPH_DRIVER -I../src -I..\Libraries\STM32L1xx_StdPeriph_Driver\inc -I..\Libraries\CMSIS\Include -I..\Libraries\CMSIS\Device\ST\STM32L1xx\Include -O0 -ffunction-sections -fdata-sections -g -Wall -o src\main.o ..\src\main.c 
+arm-atollic-eabi-gcc Libraries\STM32L1xx_StdPeriph_Driver\src\misc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_adc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_aes.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_aes_util.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_comp.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_crc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dac.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dbgmcu.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dma.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_exti.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_flash.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_flash_ramfunc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_fsmc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_gpio.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_i2c.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_iwdg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_lcd.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_opamp.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_pwr.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_rcc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_rtc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_sdio.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_spi.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_syscfg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_tim.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_usart.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_wwdg.o src\main.o src\startup_stm32l1xx_hd.o src\stm32l1xx_it.o src\system_stm32l1xx.o src\tiny_printf.o -o vrs_cv3.elf -mthumb -mcpu=cortex-m3 -T..\stm32_flash.ld -Wl,--start-group -lc -lm -Wl,--end-group -specs=nano.specs -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=vrs_cv3.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for ARM 6.0.0\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for ARM 6.0.0\Tools\arm-atollic-reports.jar sizeinfo list vrs_cv3.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   1656	      8	   1052	   2716	    a9c	vrs_cv3.elf
+Print size information done
+Generate listing file
+Output sent to: vrs_cv3.elf.list
+Generate listing file done
+Generate build reports done
+11:54:27 **** Incremental Build of configuration Debug for project vrs_cv3 ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m3 -std=gnu11 -DSTM32L1XX_HD -DUSE_STDPERIPH_DRIVER -I../src -I..\Libraries\STM32L1xx_StdPeriph_Driver\inc -I..\Libraries\CMSIS\Include -I..\Libraries\CMSIS\Device\ST\STM32L1xx\Include -O0 -ffunction-sections -fdata-sections -g -Wall -o src\main.o ..\src\main.c 
+arm-atollic-eabi-gcc Libraries\STM32L1xx_StdPeriph_Driver\src\misc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_adc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_aes.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_aes_util.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_comp.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_crc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dac.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dbgmcu.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dma.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_exti.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_flash.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_flash_ramfunc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_fsmc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_gpio.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_i2c.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_iwdg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_lcd.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_opamp.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_pwr.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_rcc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_rtc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_sdio.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_spi.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_syscfg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_tim.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_usart.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_wwdg.o src\main.o src\startup_stm32l1xx_hd.o src\stm32l1xx_it.o src\system_stm32l1xx.o src\tiny_printf.o -o vrs_cv3.elf -mthumb -mcpu=cortex-m3 -T..\stm32_flash.ld -Wl,--start-group -lc -lm -Wl,--end-group -specs=nano.specs -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=vrs_cv3.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for ARM 6.0.0\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for ARM 6.0.0\Tools\arm-atollic-reports.jar sizeinfo list vrs_cv3.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   1640	      8	   1052	   2700	    a8c	vrs_cv3.elf
+Print size information done
+Generate listing file
+Output sent to: vrs_cv3.elf.list
+Generate listing file done
+Generate build reports done
+Info: Nothing to build for vrs_cv3
+11:57:31 **** Incremental Build of configuration Debug for project vrs_cv3 ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m3 -std=gnu11 -DSTM32L1XX_HD -DUSE_STDPERIPH_DRIVER -I../src -I..\Libraries\STM32L1xx_StdPeriph_Driver\inc -I..\Libraries\CMSIS\Include -I..\Libraries\CMSIS\Device\ST\STM32L1xx\Include -O0 -ffunction-sections -fdata-sections -g -Wall -o src\main.o ..\src\main.c 
+..\src\main.c: In function 'main':
+..\src\main.c:55:2: error: unknown type name 'bool'
+  bool BUTTON;
+  ^
+..\src\main.c:78:17: error: 'true' undeclared (first use in this function)
+        BUTTON = true;
+                 ^
+..\src\main.c:78:17: note: each undeclared identifier is reported only once for each function it appears in
+..\src\main.c:82:17: error: 'false' undeclared (first use in this function)
+        BUTTON = false;
+                 ^
+..\src\main.c:55:7: warning: variable 'BUTTON' set but not used [-Wunused-but-set-variable]
+  bool BUTTON;
+       ^
+11:58:11 **** Incremental Build of configuration Debug for project vrs_cv3 ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m3 -std=gnu11 -DSTM32L1XX_HD -DUSE_STDPERIPH_DRIVER -I../src -I..\Libraries\STM32L1xx_StdPeriph_Driver\inc -I..\Libraries\CMSIS\Include -I..\Libraries\CMSIS\Device\ST\STM32L1xx\Include -O0 -ffunction-sections -fdata-sections -g -Wall -o src\main.o ..\src\main.c 
+..\src\main.c: In function 'main':
+..\src\main.c:56:7: warning: variable 'BUTTON' set but not used [-Wunused-but-set-variable]
+  bool BUTTON;
+       ^
+arm-atollic-eabi-gcc Libraries\STM32L1xx_StdPeriph_Driver\src\misc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_adc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_aes.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_aes_util.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_comp.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_crc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dac.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dbgmcu.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dma.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_exti.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_flash.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_flash_ramfunc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_fsmc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_gpio.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_i2c.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_iwdg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_lcd.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_opamp.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_pwr.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_rcc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_rtc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_sdio.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_spi.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_syscfg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_tim.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_usart.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_wwdg.o src\main.o src\startup_stm32l1xx_hd.o src\stm32l1xx_it.o src\system_stm32l1xx.o src\tiny_printf.o -o vrs_cv3.elf -mthumb -mcpu=cortex-m3 -T..\stm32_flash.ld -Wl,--start-group -lc -lm -Wl,--end-group -specs=nano.specs -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=vrs_cv3.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for ARM 6.0.0\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for ARM 6.0.0\Tools\arm-atollic-reports.jar sizeinfo list vrs_cv3.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   1656	      8	   1052	   2716	    a9c	vrs_cv3.elf
+Print size information done
+Generate listing file
+Output sent to: vrs_cv3.elf.list
+Generate listing file done
+Generate build reports done
+Info: Nothing to build for vrs_cv3
+12:06:46 **** Incremental Build of configuration Debug for project vrs_cv3 ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m3 -std=gnu11 -DSTM32L1XX_HD -DUSE_STDPERIPH_DRIVER -I../src -I..\Libraries\STM32L1xx_StdPeriph_Driver\inc -I..\Libraries\CMSIS\Include -I..\Libraries\CMSIS\Device\ST\STM32L1xx\Include -O0 -ffunction-sections -fdata-sections -g -Wall -o src\main.o ..\src\main.c 
+..\src\main.c: In function 'main':
+..\src\main.c:88:4: error: 'counter' undeclared (first use in this function)
+    counter++;
+    ^
+..\src\main.c:88:4: note: each undeclared identifier is reported only once for each function it appears in
+..\src\main.c:133:2: error: expected declaration or statement at end of input
+  }
+  ^
+..\src\main.c:56:7: warning: variable 'BUTTON' set but not used [-Wunused-but-set-variable]
+  bool BUTTON;
+       ^
+12:07:05 **** Incremental Build of configuration Debug for project vrs_cv3 ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m3 -std=gnu11 -DSTM32L1XX_HD -DUSE_STDPERIPH_DRIVER -I../src -I..\Libraries\STM32L1xx_StdPeriph_Driver\inc -I..\Libraries\CMSIS\Include -I..\Libraries\CMSIS\Device\ST\STM32L1xx\Include -O0 -ffunction-sections -fdata-sections -g -Wall -o src\main.o ..\src\main.c 
+..\src\main.c: In function 'main':
+..\src\main.c:134:2: error: expected declaration or statement at end of input
+  }
+  ^
+..\src\main.c:56:7: warning: variable 'BUTTON' set but not used [-Wunused-but-set-variable]
+  bool BUTTON;
+       ^
+12:07:12 **** Incremental Build of configuration Debug for project vrs_cv3 ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m3 -std=gnu11 -DSTM32L1XX_HD -DUSE_STDPERIPH_DRIVER -I../src -I..\Libraries\STM32L1xx_StdPeriph_Driver\inc -I..\Libraries\CMSIS\Include -I..\Libraries\CMSIS\Device\ST\STM32L1xx\Include -O0 -ffunction-sections -fdata-sections -g -Wall -o src\main.o ..\src\main.c 
+..\src\main.c: In function 'main':
+..\src\main.c:134:2: error: expected declaration or statement at end of input
+  }
+  ^
+..\src\main.c:56:7: warning: variable 'BUTTON' set but not used [-Wunused-but-set-variable]
+  bool BUTTON;
+       ^
+12:07:42 **** Incremental Build of configuration Debug for project vrs_cv3 ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m3 -std=gnu11 -DSTM32L1XX_HD -DUSE_STDPERIPH_DRIVER -I../src -I..\Libraries\STM32L1xx_StdPeriph_Driver\inc -I..\Libraries\CMSIS\Include -I..\Libraries\CMSIS\Device\ST\STM32L1xx\Include -O0 -ffunction-sections -fdata-sections -g -Wall -o src\main.o ..\src\main.c 
+..\src\main.c: In function 'main':
+..\src\main.c:134:2: error: expected declaration or statement at end of input
+  }
+  ^
+..\src\main.c:56:7: warning: variable 'BUTTON' set but not used [-Wunused-but-set-variable]
+  bool BUTTON;
+       ^
+12:08:11 **** Incremental Build of configuration Debug for project vrs_cv3 ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m3 -std=gnu11 -DSTM32L1XX_HD -DUSE_STDPERIPH_DRIVER -I../src -I..\Libraries\STM32L1xx_StdPeriph_Driver\inc -I..\Libraries\CMSIS\Include -I..\Libraries\CMSIS\Device\ST\STM32L1xx\Include -O0 -ffunction-sections -fdata-sections -g -Wall -o src\main.o ..\src\main.c 
+..\src\main.c: In function 'main':
+..\src\main.c:134:2: error: expected declaration or statement at end of input
+  }
+  ^
+..\src\main.c:56:7: warning: variable 'BUTTON' set but not used [-Wunused-but-set-variable]
+  bool BUTTON;
+       ^
+Info: Nothing to build for projektik1
+Info: Nothing to build for vrs_cv2
+12:10:55 **** Incremental Build of configuration Debug for project vrs_cv3 ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m3 -std=gnu11 -DSTM32L1XX_HD -DUSE_STDPERIPH_DRIVER -I../src -I..\Libraries\STM32L1xx_StdPeriph_Driver\inc -I..\Libraries\CMSIS\Include -I..\Libraries\CMSIS\Device\ST\STM32L1xx\Include -O0 -ffunction-sections -fdata-sections -g -Wall -o src\main.o ..\src\main.c 
+..\src\main.c: In function 'main':
+..\src\main.c:134:2: error: expected declaration or statement at end of input
+  }
+  ^
+..\src\main.c:56:7: warning: variable 'BUTTON' set but not used [-Wunused-but-set-variable]
+  bool BUTTON;
+       ^
+Info: Nothing to build for projektik1
+Info: Nothing to build for vrs_cv2
+12:11:20 **** Incremental Build of configuration Debug for project vrs_cv3 ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m3 -std=gnu11 -DSTM32L1XX_HD -DUSE_STDPERIPH_DRIVER -I../src -I..\Libraries\STM32L1xx_StdPeriph_Driver\inc -I..\Libraries\CMSIS\Include -I..\Libraries\CMSIS\Device\ST\STM32L1xx\Include -O0 -ffunction-sections -fdata-sections -g -Wall -o src\main.o ..\src\main.c 
+..\src\main.c: In function 'main':
+..\src\main.c:56:7: warning: variable 'BUTTON' set but not used [-Wunused-but-set-variable]
+  bool BUTTON;
+       ^
+arm-atollic-eabi-gcc Libraries\STM32L1xx_StdPeriph_Driver\src\misc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_adc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_aes.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_aes_util.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_comp.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_crc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dac.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dbgmcu.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dma.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_exti.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_flash.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_flash_ramfunc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_fsmc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_gpio.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_i2c.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_iwdg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_lcd.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_opamp.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_pwr.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_rcc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_rtc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_sdio.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_spi.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_syscfg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_tim.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_usart.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_wwdg.o src\main.o src\startup_stm32l1xx_hd.o src\stm32l1xx_it.o src\system_stm32l1xx.o src\tiny_printf.o -o vrs_cv3.elf -mthumb -mcpu=cortex-m3 -T..\stm32_flash.ld -Wl,--start-group -lc -lm -Wl,--end-group -specs=nano.specs -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=vrs_cv3.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for ARM 6.0.0\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for ARM 6.0.0\Tools\arm-atollic-reports.jar sizeinfo list vrs_cv3.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   1680	      8	   1052	   2740	    ab4	vrs_cv3.elf
+Print size information done
+Generate listing file
+Output sent to: vrs_cv3.elf.list
+Generate listing file done
+Generate build reports done
+Info: Nothing to build for vrs_cv3
+Info: Nothing to build for vrs_cv3
+12:18:09 **** Incremental Build of configuration Debug for project vrs_cv3 ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m3 -std=gnu11 -DSTM32L1XX_HD -DUSE_STDPERIPH_DRIVER -I../src -I..\Libraries\STM32L1xx_StdPeriph_Driver\inc -I..\Libraries\CMSIS\Include -I..\Libraries\CMSIS\Device\ST\STM32L1xx\Include -O0 -ffunction-sections -fdata-sections -g -Wall -o src\main.o ..\src\main.c 
+..\src\main.c: In function 'main':
+..\src\main.c:95:53: warning: value computed is not used [-Wunused-value]
+   else ((GPIO_ReadInputDataBit(GPIOC, GPIO_Pin_13)) == 1){
+                                                     ^
+..\src\main.c:95:58: error: expected ';' before '{' token
+   else ((GPIO_ReadInputDataBit(GPIOC, GPIO_Pin_13)) == 1){
+                                                          ^
+..\src\main.c:56:7: warning: unused variable 'BUTTON' [-Wunused-variable]
+  bool BUTTON;
+       ^
+12:19:05 **** Incremental Build of configuration Debug for project vrs_cv3 ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m3 -std=gnu11 -DSTM32L1XX_HD -DUSE_STDPERIPH_DRIVER -I../src -I..\Libraries\STM32L1xx_StdPeriph_Driver\inc -I..\Libraries\CMSIS\Include -I..\Libraries\CMSIS\Device\ST\STM32L1xx\Include -O0 -ffunction-sections -fdata-sections -g -Wall -o src\main.o ..\src\main.c 
+..\src\main.c: In function 'main':
+..\src\main.c:56:7: warning: unused variable 'BUTTON' [-Wunused-variable]
+  bool BUTTON;
+       ^
+arm-atollic-eabi-gcc Libraries\STM32L1xx_StdPeriph_Driver\src\misc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_adc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_aes.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_aes_util.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_comp.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_crc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dac.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dbgmcu.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dma.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_exti.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_flash.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_flash_ramfunc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_fsmc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_gpio.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_i2c.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_iwdg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_lcd.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_opamp.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_pwr.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_rcc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_rtc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_sdio.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_spi.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_syscfg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_tim.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_usart.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_wwdg.o src\main.o src\startup_stm32l1xx_hd.o src\stm32l1xx_it.o src\system_stm32l1xx.o src\tiny_printf.o -o vrs_cv3.elf -mthumb -mcpu=cortex-m3 -T..\stm32_flash.ld -Wl,--start-group -lc -lm -Wl,--end-group -specs=nano.specs -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=vrs_cv3.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for ARM 6.0.0\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for ARM 6.0.0\Tools\arm-atollic-reports.jar sizeinfo list vrs_cv3.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   1684	      8	   1052	   2744	    ab8	vrs_cv3.elf
+Print size information done
+Generate listing file
+Output sent to: vrs_cv3.elf.list
+Generate listing file done
+Generate build reports done
+12:26:21 **** Incremental Build of configuration Debug for project vrs_cv3 ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m3 -std=gnu11 -DSTM32L1XX_HD -DUSE_STDPERIPH_DRIVER -I../src -I..\Libraries\STM32L1xx_StdPeriph_Driver\inc -I..\Libraries\CMSIS\Include -I..\Libraries\CMSIS\Device\ST\STM32L1xx\Include -O0 -ffunction-sections -fdata-sections -g -Wall -o src\main.o ..\src\main.c 
+arm-atollic-eabi-gcc Libraries\STM32L1xx_StdPeriph_Driver\src\misc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_adc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_aes.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_aes_util.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_comp.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_crc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dac.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dbgmcu.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dma.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_exti.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_flash.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_flash_ramfunc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_fsmc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_gpio.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_i2c.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_iwdg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_lcd.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_opamp.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_pwr.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_rcc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_rtc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_sdio.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_spi.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_syscfg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_tim.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_usart.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_wwdg.o src\main.o src\startup_stm32l1xx_hd.o src\stm32l1xx_it.o src\system_stm32l1xx.o src\tiny_printf.o -o vrs_cv3.elf -mthumb -mcpu=cortex-m3 -T..\stm32_flash.ld -Wl,--start-group -lc -lm -Wl,--end-group -specs=nano.specs -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=vrs_cv3.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for ARM 6.0.0\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for ARM 6.0.0\Tools\arm-atollic-reports.jar sizeinfo list vrs_cv3.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   1724	      8	   1052	   2784	    ae0	vrs_cv3.elf
+Print size information done
+Generate listing file
+Output sent to: vrs_cv3.elf.list
+Generate listing file done
+Generate build reports done
+Info: Nothing to build for vrs_cv3
+Info: Nothing to build for vrs_cv3
+12:29:54 **** Incremental Build of configuration Debug for project vrs_cv3 ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m3 -std=gnu11 -DSTM32L1XX_HD -DUSE_STDPERIPH_DRIVER -I../src -I..\Libraries\STM32L1xx_StdPeriph_Driver\inc -I..\Libraries\CMSIS\Include -I..\Libraries\CMSIS\Device\ST\STM32L1xx\Include -O0 -ffunction-sections -fdata-sections -g -Wall -o src\main.o ..\src\main.c 
+..\src\main.c:146:1: error: expected identifier or '(' before '}' token
+ }
+ ^
+12:30:20 **** Incremental Build of configuration Debug for project vrs_cv3 ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m3 -std=gnu11 -DSTM32L1XX_HD -DUSE_STDPERIPH_DRIVER -I../src -I..\Libraries\STM32L1xx_StdPeriph_Driver\inc -I..\Libraries\CMSIS\Include -I..\Libraries\CMSIS\Device\ST\STM32L1xx\Include -O0 -ffunction-sections -fdata-sections -g -Wall -o src\main.o ..\src\main.c 
+arm-atollic-eabi-gcc Libraries\STM32L1xx_StdPeriph_Driver\src\misc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_adc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_aes.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_aes_util.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_comp.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_crc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dac.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dbgmcu.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dma.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_exti.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_flash.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_flash_ramfunc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_fsmc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_gpio.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_i2c.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_iwdg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_lcd.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_opamp.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_pwr.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_rcc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_rtc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_sdio.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_spi.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_syscfg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_tim.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_usart.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_wwdg.o src\main.o src\startup_stm32l1xx_hd.o src\stm32l1xx_it.o src\system_stm32l1xx.o src\tiny_printf.o -o vrs_cv3.elf -mthumb -mcpu=cortex-m3 -T..\stm32_flash.ld -Wl,--start-group -lc -lm -Wl,--end-group -specs=nano.specs -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=vrs_cv3.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for ARM 6.0.0\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for ARM 6.0.0\Tools\arm-atollic-reports.jar sizeinfo list vrs_cv3.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   1716	      8	   1052	   2776	    ad8	vrs_cv3.elf
+Print size information done
+Generate listing file
+Output sent to: vrs_cv3.elf.list
+Generate listing file done
+Generate build reports done
+12:32:29 **** Incremental Build of configuration Debug for project vrs_cv3 ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m3 -std=gnu11 -DSTM32L1XX_HD -DUSE_STDPERIPH_DRIVER -I../src -I..\Libraries\STM32L1xx_StdPeriph_Driver\inc -I..\Libraries\CMSIS\Include -I..\Libraries\CMSIS\Device\ST\STM32L1xx\Include -O0 -ffunction-sections -fdata-sections -g -Wall -o src\main.o ..\src\main.c 
+arm-atollic-eabi-gcc Libraries\STM32L1xx_StdPeriph_Driver\src\misc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_adc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_aes.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_aes_util.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_comp.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_crc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dac.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dbgmcu.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dma.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_exti.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_flash.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_flash_ramfunc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_fsmc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_gpio.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_i2c.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_iwdg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_lcd.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_opamp.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_pwr.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_rcc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_rtc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_sdio.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_spi.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_syscfg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_tim.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_usart.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_wwdg.o src\main.o src\startup_stm32l1xx_hd.o src\stm32l1xx_it.o src\system_stm32l1xx.o src\tiny_printf.o -o vrs_cv3.elf -mthumb -mcpu=cortex-m3 -T..\stm32_flash.ld -Wl,--start-group -lc -lm -Wl,--end-group -specs=nano.specs -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=vrs_cv3.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for ARM 6.0.0\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for ARM 6.0.0\Tools\arm-atollic-reports.jar sizeinfo list vrs_cv3.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   1716	      8	   1052	   2776	    ad8	vrs_cv3.elf
+Print size information done
+Generate listing file
+Output sent to: vrs_cv3.elf.list
+Generate listing file done
+Generate build reports done
+12:34:35 **** Incremental Build of configuration Debug for project vrs_cv3 ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m3 -std=gnu11 -DSTM32L1XX_HD -DUSE_STDPERIPH_DRIVER -I../src -I..\Libraries\STM32L1xx_StdPeriph_Driver\inc -I..\Libraries\CMSIS\Include -I..\Libraries\CMSIS\Device\ST\STM32L1xx\Include -O0 -ffunction-sections -fdata-sections -g -Wall -o src\main.o ..\src\main.c 
+..\src\main.c: In function 'main':
+..\src\main.c:99:6: warning: implicit declaration of function 'GPIO_ToogleBits' [-Wimplicit-function-declaration]
+      GPIO_ToogleBits(GPIOA, GPIO_Pin_5); //vypni LED
+      ^
+arm-atollic-eabi-gcc Libraries\STM32L1xx_StdPeriph_Driver\src\misc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_adc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_aes.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_aes_util.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_comp.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_crc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dac.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dbgmcu.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dma.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_exti.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_flash.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_flash_ramfunc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_fsmc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_gpio.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_i2c.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_iwdg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_lcd.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_opamp.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_pwr.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_rcc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_rtc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_sdio.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_spi.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_syscfg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_tim.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_usart.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_wwdg.o src\main.o src\startup_stm32l1xx_hd.o src\stm32l1xx_it.o src\system_stm32l1xx.o src\tiny_printf.o -o vrs_cv3.elf -mthumb -mcpu=cortex-m3 -T..\stm32_flash.ld -Wl,--start-group -lc -lm -Wl,--end-group -specs=nano.specs -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=vrs_cv3.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 
+src\main.o: In function `main':
+C:\Users\baxos\Atollic\TrueSTUDIO\AnickaJakubko\vrs_cv3\Debug/..\src/main.c:99: undefined reference to `GPIO_ToogleBits'
+collect2.exe: error: ld returned 1 exit status
+12:35:04 **** Incremental Build of configuration Debug for project vrs_cv3 ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m3 -std=gnu11 -DSTM32L1XX_HD -DUSE_STDPERIPH_DRIVER -I../src -I..\Libraries\STM32L1xx_StdPeriph_Driver\inc -I..\Libraries\CMSIS\Include -I..\Libraries\CMSIS\Device\ST\STM32L1xx\Include -O0 -ffunction-sections -fdata-sections -g -Wall -o src\main.o ..\src\main.c 
+arm-atollic-eabi-gcc Libraries\STM32L1xx_StdPeriph_Driver\src\misc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_adc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_aes.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_aes_util.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_comp.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_crc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dac.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dbgmcu.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_dma.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_exti.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_flash.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_flash_ramfunc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_fsmc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_gpio.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_i2c.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_iwdg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_lcd.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_opamp.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_pwr.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_rcc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_rtc.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_sdio.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_spi.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_syscfg.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_tim.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_usart.o Libraries\STM32L1xx_StdPeriph_Driver\src\stm32l1xx_wwdg.o src\main.o src\startup_stm32l1xx_hd.o src\stm32l1xx_it.o src\system_stm32l1xx.o src\tiny_printf.o -o vrs_cv3.elf -mthumb -mcpu=cortex-m3 -T..\stm32_flash.ld -Wl,--start-group -lc -lm -Wl,--end-group -specs=nano.specs -specs=nosys.specs -static -Wl,-cref,-u,Reset_Handler -Wl,-Map=vrs_cv3.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 
+C:\Program Files (x86)\Atollic\TrueSTUDIO for ARM 6.0.0\ide\jre\bin\java -jar C:\Program Files (x86)\Atollic\TrueSTUDIO for ARM 6.0.0\Tools\arm-atollic-reports.jar sizeinfo list vrs_cv3.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   1692	      8	   1052	   2752	    ac0	vrs_cv3.elf
+Print size information done
+Generate listing file
+Output sent to: vrs_cv3.elf.list
+Generate listing file done
+Generate build reports done
