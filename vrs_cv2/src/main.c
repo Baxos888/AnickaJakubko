@@ -72,22 +72,23 @@ int main(void) {
 	GPIOA->PUPDR |= (01 << 5 * 2);
 	GPIOA->OSPEEDR |= (11 << 5 * 2);
 
-	RCC_AHBPeriphClockCmd(RCC_AHBPeriph_GPIOC, ENABLE);
-	GPIOC->MODER |= (00 << 13 * 2);
-	GPIOC->OTYPER &= ~(1 << 13);
-	GPIOC->PUPDR |= (00 << 13 * 2);
+//	RCC_AHBPeriphClockCmd(RCC_AHBPeriph_GPIOC, ENABLE);
+//	GPIOC->MODER |= (00 << 13 * 2);
+//	GPIOC->OTYPER &= ~(1 << 13);
+//	GPIOC->PUPDR |= (00 << 13 * 2);
+
 	int counter = 0;
 	bool BUTTON;
 	/* Infinite loop */
 	while (1) {
-//	GPIOA->ODR |= (1<<5);
-//	GPIOA->ODR &= ~(1<<5);
-//
-//	GPIOA->BSRRL |= (1<<5);
-//	GPIOA->BSRRH |= (1<<5);
-//
-//	GPIOA->ODR ^= (1<<5);
-//	GPIOA->ODR ^= (1<<5);
+	GPIOA->ODR |= (1<<5);
+	GPIOA->ODR &= ~(1<<5);
+
+	GPIOA->BSRRL |= (1<<5);
+	GPIOA->BSRRH |= (1<<5);
+
+	GPIOA->ODR ^= (1<<5);
+	GPIOA->ODR ^= (1<<5);
 		/* uloha 2 */
 //	if ((GPIOC->IDR & (1<<13)) == 0){
 //			BUTTON = true;
@@ -122,16 +123,16 @@ int main(void) {
 //		}
 //		uloha 3c************
 
-		if ((GPIOC->IDR & (1 << 13)) == 0) {
-			BUTTON = true;
-			counter++;
-		if (counter%2 == 0){
-			GPIOA->ODR |= (1<<5); //zapni LED
-			}
-		else{
-			GPIOA->ODR &= ~(1<<5); //vypni LED
-		}
-		}
+//		if ((GPIOC->IDR & (1 << 13)) == 0) {
+//			BUTTON = true;
+//			counter++;
+//		if (counter%2 == 0){
+//			GPIOA->ODR |= (1<<5); //zapni LED
+//			}
+//		else{
+//			GPIOA->ODR &= ~(1<<5); //vypni LED
+//		}
+//		}
 	}
 	return 0;
 }
