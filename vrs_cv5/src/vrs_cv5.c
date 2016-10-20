@@ -2,14 +2,14 @@
  * vrs_cv5.c
  *
  *  Created on: 18. 10. 2016
- *      Author: jakub
+ *      Author: jakub a anna :-*
  */
 
 #include <stddef.h>
 #include "stm32l1xx.h"
 #include "vrs_cv5.h"
 
-void setup(){
+void setup() {
 	NVIC_PriorityGroupConfig(NVIC_PriorityGroup_0);
 	NVIC_InitTypeDef NVIC_InitStructure;
 	NVIC_InitStructure.NVIC_IRQChannel = ADC1_IRQn; //zoznam prerušení nájdete v súbore stm32l1xx.h
@@ -47,7 +47,7 @@ void setup(){
 	USART_InitStructure.USART_StopBits = USART_StopBits_1;
 	USART_InitStructure.USART_Parity = USART_Parity_No;
 	USART_InitStructure.USART_HardwareFlowControl =
-			USART_HardwareFlowControl_None;
+	USART_HardwareFlowControl_None;
 	USART_InitStructure.USART_Mode = USART_Mode_Rx | USART_Mode_Tx;
 	USART_Init(USART1, &USART_InitStructure);
 
@@ -56,12 +56,7 @@ void setup(){
 	//void USART_Cmd(USART_TypeDef* USARTx, FunctionalState NewState)
 	USART_Cmd(USART1, ENABLE);
 	//void ADC_ITConfig(ADC_TypeDef* ADCx, uint16_t ADC_IT,		FunctionalState NewState);
-	ADC_InitTypeDef ADC_InitStructure;
-	ADC_ITConfig(ADC1, ADC_IT_EOC, ENABLE);
-	ADC_ITConfig(ADC1, ADC_IT_OVR, ENABLE);
-	//FlagStatus ADC_GetFlagStatus(ADC_TypeDef* ADCx, uint16_t ADC_FLAG);
-	ADC_GetFlagStatus(ADC1, ADC_FLAG_EOC);
-	ADC_GetFlagStatus(ADC1, ADC_FLAG_OVR);
+	//ADC_InitTypeDef ADC_InitStructure;
 
 }
 
@@ -86,7 +81,7 @@ void adc_init(void) {
 	ADC_StructInit(&ADC_InitStructure);
 	/* ADC1 configuration */
 	ADC_InitStructure.ADC_Resolution = ADC_Resolution_12b;
-	ADC_InitStructure.ADC_ContinuousConvMode = DISABLE;
+	ADC_InitStructure.ADC_ContinuousConvMode = ENABLE;
 	ADC_InitStructure.ADC_ExternalTrigConvEdge = ADC_ExternalTrigConvEdge_None;
 	ADC_InitStructure.ADC_DataAlign = ADC_DataAlign_Right;
 	ADC_InitStructure.ADC_NbrOfConversion = 1;
@@ -99,10 +94,11 @@ void adc_init(void) {
 	while (ADC_GetFlagStatus(ADC1, ADC_FLAG_ADONS) == RESET) {
 	}
 	/* Start ADC Software Conversion */
-	ADC_SoftwareStartConv(ADC1);
-}
-
-void blikanie() {
+	ADC_ITConfig(ADC1, ADC_IT_EOC, ENABLE);
+	ADC_ITConfig(ADC1, ADC_IT_OVR, ENABLE);
+	//FlagStatus ADC_GetFlagStatus(ADC_TypeDef* ADCx, uint16_t ADC_FLAG);
+	ADC_GetFlagStatus(ADC1, ADC_FLAG_EOC);
+	ADC_GetFlagStatus(ADC1, ADC_FLAG_OVR);
 	GPIO_InitTypeDef gpioAInitStructure;
 
 	RCC_AHBPeriphClockCmd(RCC_AHBPeriph_GPIOA, ENABLE);
@@ -113,11 +109,17 @@ void blikanie() {
 	gpioAInitStructure.GPIO_Pin = GPIO_Pin_5;
 
 	GPIO_Init(GPIOA, &gpioAInitStructure);
+
+	ADC_SoftwareStartConv(ADC1);
+}
+
+void blikanie() {
 	int i = 0;
 	int j = 0;
 	int y = 0;
 	uint16_t AD_value;
-	adc_init();
+	//ADC_SoftwareStartConv(ADC1);
+	//adc_init();
 	/* Start ADC Software Conversion */
 	while (1) {
 		ADC_SoftwareStartConv(ADC1);
@@ -153,8 +155,9 @@ void blikanie() {
 	}
 }
 
-void ADC1_IRQHandler(void){
+void ADC1_IRQHandler(void) {
 	blikanie();
 	//USART_SendData(USART1, 7);
 	ADC_ClearITPendingBit(ADC1, ADC_IT_EOC);
 }
+

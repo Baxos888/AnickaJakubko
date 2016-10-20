@@ -1,0 +1,162 @@
+/*
+ * vrs_cv5.c
+ *
+ *  Created on: 18. 10. 2016
+ *      Author: jakub a anna
+ */
+
+#include <stddef.h>
+#include "stm32l1xx.h"
+#include "vrs_cv5.h"
+
+void setup() {
+	NVIC_PriorityGroupConfig(NVIC_PriorityGroup_0);
+	NVIC_InitTypeDef NVIC_InitStructure;
+	NVIC_InitStructure.NVIC_IRQChannel = ADC1_IRQn; //zoznam preruöenÌ n·jdete v s˙bore stm32l1xx.h
+	NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 1;
+	NVIC_InitStructure.NVIC_IRQChannelSubPriority = 0;
+	NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
+	NVIC_Init(&NVIC_InitStructure);
+
+	GPIO_InitTypeDef gpioATXInitStructure;
+	RCC_AHBPeriphClockCmd(RCC_AHBPeriph_GPIOA, ENABLE);
+	gpioATXInitStructure.GPIO_Mode = GPIO_Mode_AF;
+	gpioATXInitStructure.GPIO_OType = GPIO_OType_PP;
+	gpioATXInitStructure.GPIO_PuPd = GPIO_PuPd_NOPULL;
+	gpioATXInitStructure.GPIO_Speed = GPIO_Speed_40MHz;
+	gpioATXInitStructure.GPIO_Pin = GPIO_Pin_9; //TX
+	GPIO_Init(GPIOA, &gpioATXInitStructure);
+
+	GPIO_InitTypeDef gpioARXInitStructure;
+	RCC_AHBPeriphClockCmd(RCC_AHBPeriph_GPIOA, ENABLE);
+	gpioARXInitStructure.GPIO_Mode = GPIO_Mode_AF;
+	gpioARXInitStructure.GPIO_OType = GPIO_OType_PP;
+	gpioARXInitStructure.GPIO_PuPd = GPIO_PuPd_NOPULL;
+	gpioARXInitStructure.GPIO_Speed = GPIO_Speed_40MHz;
+	gpioARXInitStructure.GPIO_Pin = GPIO_Pin_10; //RX
+	GPIO_Init(GPIOA, &gpioARXInitStructure);
+
+	//void GPIO_PinAFConfig(GPIO_TypeDef* GPIOx, uint16_t GPIO_PinSource,	uint8_t GPIO_AF)
+	GPIO_PinAFConfig(GPIOA, GPIO_PinSource9, GPIO_AF_USART1);
+	GPIO_PinAFConfig(GPIOA, GPIO_PinSource10, GPIO_AF_USART1);
+
+	USART_InitTypeDef USART_InitStructure;
+	RCC_APB2PeriphClockCmd(RCC_APB2Periph_USART1, ENABLE);
+	USART_InitStructure.USART_BaudRate = 2 * 9600;
+	USART_InitStructure.USART_WordLength = USART_WordLength_8b;
+	USART_InitStructure.USART_StopBits = USART_StopBits_1;
+	USART_InitStructure.USART_Parity = USART_Parity_No;
+	USART_InitStructure.USART_HardwareFlowControl =
+	USART_HardwareFlowControl_None;
+	USART_InitStructure.USART_Mode = USART_Mode_Rx | USART_Mode_Tx;
+	USART_Init(USART1, &USART_InitStructure);
+
+	//void USART_ITConfig(USART_TypeDef* USARTx, uint16_t USART_IT, FunctionalState NewState)
+	USART_ITConfig(USART1, USART_IT_RXNE, ENABLE);
+	//void USART_Cmd(USART_TypeDef* USARTx, FunctionalState NewState)
+	USART_Cmd(USART1, ENABLE);
+	//void ADC_ITConfig(ADC_TypeDef* ADCx, uint16_t ADC_IT,		FunctionalState NewState);
+	//ADC_InitTypeDef ADC_InitStructure;
+	ADC_ITConfig(ADC1, ADC_IT_EOC, ENABLE);
+	ADC_ITConfig(ADC1, ADC_IT_OVR, ENABLE);
+	//FlagStatus ADC_GetFlagStatus(ADC_TypeDef* ADCx, uint16_t ADC_FLAG);
+	ADC_GetFlagStatus(ADC1, ADC_FLAG_EOC);
+	ADC_GetFlagStatus(ADC1, ADC_FLAG_OVR);
+
+}
+
+void adc_init(void) {
+	GPIO_InitTypeDef GPIO_InitStructure;
+	ADC_InitTypeDef ADC_InitStructure;
+	/* Enable GPIO clock */
+	RCC_AHBPeriphClockCmd(RCC_AHBPeriph_GPIOA, ENABLE); //Opraviù a upraviù
+	/* Configure ADCx Channel 2 as analog input */
+	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_0;
+	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AN;
+	GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_NOPULL;
+	GPIO_Init(GPIOA, &GPIO_InitStructure);
+	/* Enable the HSI oscillator */
+	RCC_HSICmd(ENABLE);
+	/* Check that HSI oscillator is ready */
+	while (RCC_GetFlagStatus(RCC_FLAG_HSIRDY) == RESET);
+	/* Enable ADC clock */
+	RCC_APB2PeriphClockCmd(RCC_APB2Periph_ADC1, ENABLE);
+	/* Initialize ADC structure */
+	ADC_StructInit(&ADC_InitStructure);
+	/* ADC1 configuration */
+	ADC_InitStructure.ADC_Resolution = ADC_Resolution_12b;
+	ADC_InitStructure.ADC_ContinuousConvMode = DISABLE;
+	ADC_InitStructure.ADC_ExternalTrigConvEdge = ADC_ExternalTrigConvEdge_None;
+	ADC_InitStructure.ADC_DataAlign = ADC_DataAlign_Right;
+	ADC_InitStructure.ADC_NbrOfConversion = 1;
+	ADC_Init(ADC1, &ADC_InitStructure);
+	/* ADCx regular channel8 configuration */
+	ADC_RegularChannelConfig(ADC1, ADC_Channel_0, 1, ADC_SampleTime_16Cycles);
+	/* Enable the ADC */
+	ADC_Cmd(ADC1, ENABLE);
+	/* Wait until the ADC1 is ready */
+	while (ADC_GetFlagStatus(ADC1, ADC_FLAG_ADONS) == RESET) {
+	}
+	/* Start ADC Software Conversion */
+
+	GPIO_InitTypeDef gpioAInitStructure;
+
+	RCC_AHBPeriphClockCmd(RCC_AHBPeriph_GPIOA, ENABLE);
+	gpioAInitStructure.GPIO_Mode = GPIO_Mode_OUT;
+	gpioAInitStructure.GPIO_OType = GPIO_OType_PP;
+	gpioAInitStructure.GPIO_PuPd = GPIO_PuPd_UP;
+	gpioAInitStructure.GPIO_Speed = GPIO_Speed_40MHz;
+	gpioAInitStructure.GPIO_Pin = GPIO_Pin_5;
+
+	GPIO_Init(GPIOA, &gpioAInitStructure);
+
+	ADC_SoftwareStartConv(ADC1);
+}
+
+void blikanie(){
+	int i = 0;
+	int j = 0;
+	int y = 0;
+	uint16_t AD_value;
+	ADC_SoftwareStartConv(ADC1);
+	//adc_init();
+	/* Start ADC Software Conversion */
+	//while (1) {
+		ADC_SoftwareStartConv(ADC1);
+		while (!ADC_GetFlagStatus(ADC1, ADC_FLAG_EOC)) {
+		}
+		AD_value = ADC_GetConversionValue(ADC1);
+		switch (AD_value) {
+		case 3900 ... 4000:
+			GPIO_ResetBits(GPIOA, GPIO_Pin_5);
+			y = 0;
+			break;
+		case 2000 ... 2100:
+			y = 25000;
+			break;
+		case 2800 ... 3000:
+			y = 50000;
+			break;
+		case 3400 ... 3600:
+			y = 150000;
+			break;
+		case 3601 ... 3800:
+			y = 500000;
+			break;
+		}
+		for (i = 0; i < y; i++) {
+			if (i == y - 1)
+				GPIO_ResetBits(GPIOA, GPIO_Pin_5); //vypni LED
+		}
+		for (j = 0; j < y; j++) {
+			if (j == y - 1)
+				GPIO_SetBits(GPIOA, GPIO_Pin_5); // zapni LED
+		}
+	//}
+}
+
+void ADC1_IRQHandler(void) {
+	blikanie();
+	//USART_SendData(USART1, 7);
+	ADC_ClearITPendingBit(ADC1, ADC_IT_EOC);
+}

@@ -35,11 +35,12 @@ int main(void) {
 
 	setup();
 	adc_init();
+	while (1) {
 
-
+	}
 //	void USART_SendData(USART_TypeDef* USARTx, uint16_t Data)
 //	uint16_t USART_ReceiveData(USART_TypeDef* USARTx)
-	USART_SendData(USART1,10);
+//	USART_SendData(USART1, 10);
 	return 0;
 }
 
