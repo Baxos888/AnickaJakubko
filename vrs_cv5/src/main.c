@@ -31,16 +31,50 @@
 #include "stm32l1xx.h"
 #include "vrs_cv5.h"
 
-int main(void) {
+#define MAX_STRLEN 12
 
+volatile char received_string[MAX_STRLEN+1]; // this will hold the recieved string
+
+
+void USART1_IRQHandler(void){
+
+	// check if the USART1 receive interrupt flag was set
+	if( USART_GetITStatus(USART1, USART_IT_RXNE) ){
+
+		static uint8_t cnt = 0; // this counter is used to determine the string length
+		char t = USART1->DR; // the character from the USART1 data register is saved in t
+
+		/* check if the received character is not the LF character (used to determine end of string)
+		 * or the if the maximum string length has been been reached
+		 */
+		if( (t != '\n') && (cnt < MAX_STRLEN) ){
+			received_string[cnt] = t;
+			cnt++;
+		}
+		else{ // otherwise reset the character counter and print the received string
+			cnt = 0;
+			USART_puts(USART1, received_string);
+		}
+	}
+}
+
+void USART_puts(USART_TypeDef* USARTx, volatile char *s){
+
+	while(*s){
+		// wait until data register is empty
+		while( !(USARTx->SR & 0x00000040) );
+		USART_SendData(USARTx, *s);
+		*s++;
+	}
+}
+
+
+int main(void) {
 	setup();
 	adc_init();
-	while (1) {
 
-	}
-//	void USART_SendData(USART_TypeDef* USARTx, uint16_t Data)
-//	uint16_t USART_ReceiveData(USART_TypeDef* USARTx)
-//	USART_SendData(USART1, 10);
+	USART_puts(USART1, "Init complete! Hello World!\r\n");
+
 	return 0;
 }
 
