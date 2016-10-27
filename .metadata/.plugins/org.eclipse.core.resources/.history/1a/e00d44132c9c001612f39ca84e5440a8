@@ -1,0 +1,20 @@
+/*
+ * vrs_cv5.h
+ *
+ *  Created on: 18. 10. 2016
+ *      Author: zolta
+ */
+
+#ifndef VRS_CV5_H_
+#define VRS_CV5_H_
+
+
+void startNVIC();
+void adc_init(void);
+void startUSART();
+void ADC1_IRQHandler(void);
+void blikaj();
+void task1();
+void sendString(volatile int uart, volatile int hodnota);
+
+#endif /* VRS_CV5_H_ */

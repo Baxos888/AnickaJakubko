@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <project>
-	<configuration id="com.atollic.truestudio.exe.debug.927001828" name="Debug">
+	<configuration id="com.atollic.truestudio.exe.debug.1184051185" name="Debug">
 		<extension point="org.eclipse.cdt.core.LanguageSettingsProvider">
 			<provider id="com.atollic.truestudio.mbs.provider">
 				<language id="org.eclipse.cdt.core.gcc">
@@ -2125,7 +2125,7 @@
 			</provider>
 		</extension>
 	</configuration>
-	<configuration id="com.atollic.truestudio.configuration.release.1038518967" name="Release">
+	<configuration id="com.atollic.truestudio.configuration.release.1434473117" name="Release">
 		<extension point="org.eclipse.cdt.core.LanguageSettingsProvider">
 			<provider id="com.atollic.truestudio.mbs.provider">
 				<language id="org.eclipse.cdt.core.gcc">
